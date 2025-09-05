@@ -22,6 +22,7 @@ Visuais:
 
 -Possui botões que "desaparecem" sessões para dar espaço à outras.
 
+
 Futuras atualizações:
 
 Pretendo adicionar no sistema um banco de dados para guardar as informações mesmo após o usuário fechar a aba.
