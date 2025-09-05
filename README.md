@@ -18,7 +18,7 @@ Por fim, na terceira aba, ele possui dois botões, um que mostra a maior, a meno
 
 Visuais:
 
--Possui uma barra botão que fecha ou abre a barra lateral.
+-Possui uma barra botão que fecha ou abre a barra lateral.\n
 -Possui botões que "desaparecem" sessões para dar espaço à outras.
 
 Futuras atualizações:
