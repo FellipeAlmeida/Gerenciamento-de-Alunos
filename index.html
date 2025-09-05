@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Roney</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div class="barraLateral">
+        <header class="cabecalho">
+            <div class="headerBarraLateral">
+                <h1>SISTEMA DE GERENCIAMENTO DE ALUNOS</h1>
+            </div>
+            <div class="btn">
+                <a href="#secaoAlunos" class="alunos">Alunos</a>
+                <a href="#secaoNotas" class="notas">Notas</a>
+                <a href="#secaoEstatisticas" class="estatisticas">Estatisticas</a>
+            </div>
+        </header> 
+    </div>
+    <button class="btnAbrirBarra"><</button>
+
+    <main class="secaoAlunos">
+        <div class="divAlunos">
+            <div>
+                <h1>ALUNOS</h1>
+            </div>
+            <div class="">
+                <ul class="mostrarAlunosListados"></ul>
+            </div>
+            <div class="alunos" id="alunos">
+                <div class="msgAlunoAdicionado">
+                    <button class="adicionarAluno">Adicionar Aluno</button>
+                </div>
+                <div>
+                    <button class="listarAluno">Listar Alunos</button>
+                </div>
+                <div class="msgRemoverAluno">
+                    <button class="removerAluno">Remover Aluno</button>
+                </div>
+            </div>      
+        </div>
+    </main>
+
+
+    <section class="secaoNotas">
+        <div class="divNotas">
+            <h1>NOTAS</h1>
+            <div class="mostrarAprovados">
+                <ul></ul>
+            </div>
+            <div class="registrarNotas" id="notas">
+                <input type="number" placeholder="Digite a média da instituição:" class="mediaInst">
+                <button class="mostrarAlunosAprovados">Mostrar Alunos Aprovados</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="secaoEstatisticas">
+        <h1>ESTATÍSTICAS</h1>
+        <div class="divEstatisticas">
+            <div class="estatisticas">
+                <div class="mostrarEstatisticas">
+                    <ul></ul>
+                </div>
+                <button class="btnMostrarEstatisticas">Mostrar Médias</button>
+            </div>
+
+            <div class="linha-vertical"></div>
+
+            <div class="divOrdenacao">
+                <div class="ordernarPorMedia">
+                    <ul></ul>
+                </div>
+                <div><button class="btnOrdenarAlunos">Ordenar Alunos</button></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

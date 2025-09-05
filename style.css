@@ -1,0 +1,264 @@
+
+body {
+    display: flex;
+    background: linear-gradient(to bottom, rgba(28, 33, 33, 1) 0%, rgba(87, 83, 78, 1) 100%);
+    background-size: cover;
+    color: aliceblue;
+    height: 100vh;  /* ocupa a tela inteira */
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    font-size: large;
+    margin-top: 50px;
+}
+
+.alunos, .notas, .estatisticas {
+    transition: all 0.5s;
+}
+
+.alunos:hover, .notas:hover, .estatisticas:hover {
+    transition: all 0.5s;
+    color: #000000;
+}
+
+main {
+    flex: 1;       /* ocupa o espaço restante */
+    height: 100vh;
+    display: none; /* só mostra quando precisar */
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoAlunos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divAlunos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.mostrarAlunosListados {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerBarraLateral {
+    position: relative;              /* necessário para o absolute funcionar */
+    display: flex;
+    align-items: center;
+    justify-content: center;         /* centraliza o título no meio */
+    gap: 10px;
+}
+
+.headerBarraLateral h1 {
+    color: white; /* deixa o título visível */
+    font-size: 16px;
+}
+
+.headerBarraLateral button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 10px;
+}
+
+
+button {
+    background-color:#606060;
+    transition: all 0.5s;
+    width: 150px;
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: black;
+    transition: all 0.5s;
+}
+
+.alunos {
+    display: flex;
+    gap: 30px;
+}
+
+main h1 {
+    margin-top: 20px;
+}
+
+.adicionarAluno:hover {
+    background-color: rgb(19, 147, 57);
+}
+
+
+.removerAluno:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.msgAlunoAdicionado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgAlunoAdicionado p {
+    color: rgb(0, 255, 0);
+}
+
+.msgRemoverAluno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgRemoverAluno p {
+    color: rgb(255, 0, 0);
+}
+
+input {
+    color: #1c2121;
+}
+
+.barraLateral {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(67, 67, 67);
+    transition: width 0.5s ease;
+    overflow: hidden;
+}
+
+.barraLateral.fechada {
+    width: 0;
+}
+
+.btnAbrirBarra {
+    height: 100vh;
+    width: 15px;
+    margin-top: 0px;
+    border-radius: 0;
+}
+
+.cabecalho {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.secaoNotas {
+    flex: 1;       /* ocupa o espaço restante */
+    height: 100vh;
+    display: none; /* só mostra quando precisar */
+    flex-direction: column;
+    align-items: center;
+}
+
+.divNotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.registrarNotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divNotas h1{
+    margin-top: 20px;
+}
+
+input {
+    width: 160px;
+    border-radius: 5px;
+
+}
+
+.mostrarAlunosAprovados {
+    width: 120%;
+}
+
+.mediaInst {
+    width: 120%;
+}
+
+/* ESTATISTICAS */
+
+.secaoEstatisticas {
+    flex: 1;       /* ocupa o espaço restante */
+    height: 100vh;
+    display: none; /* só mostra quando precisar */
+    flex-direction: column;
+    align-items: center;
+}
+
+.divEstatisticas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 200px;
+}
+
+.linha-vertical {
+    border-left: 1px solid rgb(255, 255, 255); 
+    height: 90%; 
+}
+
+.estatisticas, .divOrdenacao {
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-end; /* botão embaixo */
+    align-items: center;
+    height: 100%;
+}
+
+.mostrarEstatisticas, .ordernarPorMedia {
+    flex: 1; /* ocupa o espaço acima */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centraliza verticalmente */
+    align-items: center;      /* centraliza horizontalmente */
+}
+
+.secaoEstatisticas h1{
+    margin-top: 20px;
+}
