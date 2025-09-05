@@ -26,3 +26,6 @@ Visuais:
 Futuras atualizações:
 
 Pretendo adicionar no sistema um banco de dados para guardar as informações mesmo após o usuário fechar a aba.
+
+Link do sistema: https://fellipealmeida.github.io/Gerenciamento-de-Alunos/
+obs: só funciona em dispositivos desktop.
