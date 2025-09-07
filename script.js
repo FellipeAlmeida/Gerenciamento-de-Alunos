@@ -123,6 +123,10 @@ function aparecerAbaNotas(){
 
 function mostrarAprovados(){
 
+    if (mediaInst.value > 10) {
+        alert("Digite um número entre 0 e 10.")
+    }
+
     mostrarAprovadosUl.innerHTML = ""
     let encontrou = false
 
@@ -139,7 +143,7 @@ function mostrarAprovados(){
 
     if (!encontrou){
         alert("Nenhum aluno passou.")
-    }
+    } 
 }
 
 
@@ -171,15 +175,14 @@ function mostrarEstatisticas(){
     let subtracao = 10
     let alunoTop = null
     let alunoPaia = null
-
-    // verifica se há ausência de alunos com notas cadastradas
     
+
 
     // maior media
 
     for (let i = 0; i < alunos.length; i++){
         if (alunos[i].media > soma) {
-            soma = alunos[i].media
+            soma = alunos[i].media.toFixed(1)
             alunoTop = alunos[i]
         }
     }
@@ -196,7 +199,7 @@ function mostrarEstatisticas(){
 
     for (let i = 0; i < alunos.length; i++){
         if (alunos[i].media < subtracao) {
-            subtracao = alunos[i].media
+            subtracao = alunos[i].media.toFixed(1)
             alunoPaia = alunos[i]
         }
     }
@@ -239,13 +242,14 @@ function ordenarAlunos(){
     if (alunos.length === 0){
         alert("Registre alunos com suas respectivas notas.")
     } else {
+
+        let ordemDecrescente = alunos.sort((a, b) => b.media - a.media)
+
         for (let i = 0; i < alunos.length; i++){
-            subtracao = alunos[i].media 
-            let ordemDecrescente = alunos[i].nome
             let textoEstatisticas = document.createElement("li")
-            textoEstatisticas.textContent = `Nome: ${ordemDecrescente} Médias: ${subtracao.toFixed(1)}`
+            textoEstatisticas.textContent = `Nome: ${ordemDecrescente[i].nome}, Médias: ${ordemDecrescente[i].media.toFixed(1)}`
             mostrarOrdenadosUl.appendChild(textoEstatisticas)
-        }
+        } 
     }
 }
 
